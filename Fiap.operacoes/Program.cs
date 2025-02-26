@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,12 +51,23 @@ namespace Fiap.operacoes
                 Console.WriteLine($"Nenhum Negativo: {nenhumNegativo}");
 
 
+                if (Directory.Exists("D:/Fernando"))
+                {
+                    Console.WriteLine("Pasta Existe");
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Pasta não existe");
+                    Directory.CreateDirectory("D:/Fernando");
+                }
+
+
                 Console.Write("Aperte qualquer coisa para sair... ");
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-
 
             }
 
