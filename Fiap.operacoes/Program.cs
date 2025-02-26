@@ -37,7 +37,7 @@ namespace Fiap.operacoes
                 Console.WriteLine($"O valor da multiplicacao é {mult}");
                 Console.WriteLine($"O valor do modulo é {modulo}");
 
-
+                
                 Console.WriteLine($"Os numeros são iguais? {num1 == num2}");
 
                 Console.WriteLine($"Os numeros são diferentes? {num1 != num2}");
@@ -50,7 +50,7 @@ namespace Fiap.operacoes
                 Console.WriteLine($"Nenhum Negativo: {nenhumNegativo}");
 
 
-                Console.Write("Digite qualquer coisa para sair... ");
+                Console.Write("Aperte qualquer coisa para sair... ");
             }
             catch (Exception ex)
             {
